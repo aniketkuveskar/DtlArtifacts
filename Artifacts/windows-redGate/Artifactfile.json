@@ -1,0 +1,15 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "sqltoolbelt",
+    "publisher": "Microsoft",
+    "description": "Installs sqltoolbelt using the Chocolatey package manager",
+    "tags": [
+        "Windows",
+        "sqltoolbelt"
+    ],
+    "iconUri": "https://chocolatey.org/content/packageimages/SqlToolbelt.2020.09.07.png",
+    "targetOsType": "Windows",
+    "runCommand": {
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./install-choco-package.ps1 -Packages ', 'sqltoolbelt', '\"')]"
+    }
+}
