@@ -1,0 +1,15 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "azcopy8.1",
+    "publisher": "AniketK",
+    "description": "Installs azcopy8.1 using the Chocolatey package manager",
+    "tags": [
+        "Windows",
+        "azcopy8.1"
+    ],
+    "iconUri": "https://chocolatey.org/content/packageimages/azcopy10.10.6.0.png",
+    "targetOsType": "Windows",
+    "runCommand": {
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./install-choco-package.ps1 -Packages ', 'azcopy', '\"')]"
+    }
+}
