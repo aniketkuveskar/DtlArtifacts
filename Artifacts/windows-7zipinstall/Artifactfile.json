@@ -1,0 +1,15 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "7zip.install",
+    "publisher": "AniketK",
+    "description": "Installs 7zip.install using the Chocolatey package manager",
+    "tags": [
+        "Windows",
+        "7zip.install"
+    ],
+    "iconUri": "https://chocolatey.org/content/packageimages/7zip.install.19.0.svg",
+    "targetOsType": "Windows",
+    "runCommand": {
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./install-choco-package.ps1 -Packages ', '7zip.install', '\"')]"
+    }
+}
